@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "password123",
+      "created_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "user-1776111249517",
+      "name": "Shyam",
+      "email": "shyam@gmail.com",
+      "password": "shyam@123",
+      "created_at": "2026-04-13T20:14:09.517Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "Website Redesign",
+      "description": "Q2 project to redesign company website",
+      "owner_id": "user-1",
+      "created_at": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "proj-1776103569856",
+      "name": "New",
+      "description": "Testing",
+      "owner_id": "user-1",
+      "created_at": "2026-04-13T18:06:09.856Z"
+    },
+    {
+      "id": "proj-1776111299936",
+      "name": "Testing New",
+      "description": "Testing",
+      "owner_id": "user-1776111249517",
+      "created_at": "2026-04-13T20:14:59.936Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Design homepage mockup",
+      "description": "Create initial mockup for new homepage design",
+      "status": "done",
+      "priority": "medium",
+      "project_id": "proj-1",
+      "assignee_id": "user-1",
+      "due_date": "2026-04-10",
+      "created_at": "2026-04-01T10:00:00Z",
+      "updated_at": "2026-04-14T10:07:59.858Z"
+    },
+    {
+      "id": "task-2",
+      "title": "Implement navigation component",
+      "description": "Build responsive navigation component",
+      "status": "in_progress",
+      "priority": "low",
+      "project_id": "proj-1",
+      "assignee_id": "user-1",
+      "due_date": "2026-04-15",
+      "created_at": "2026-04-02T10:00:00Z",
+      "updated_at": "2026-04-14T09:49:21.727Z"
+    },
+    {
+      "id": "task-3",
+      "title": "Write unit tests",
+      "description": "Add unit tests for all components",
+      "status": "todo",
+      "priority": "high",
+      "project_id": "proj-1",
+      "assignee_id": "user-1776111249517",
+      "due_date": "2026-04-20",
+      "created_at": "2026-04-03T10:00:00Z",
+      "updated_at": "2026-04-14T10:01:00.798Z"
+    },
+    {
+      "id": "task-1776105992317",
+      "title": "Test Task",
+      "description": "",
+      "status": "todo",
+      "priority": "medium",
+      "project_id": "proj-1",
+      "assignee_id": "user-1",
+      "due_date": null,
+      "created_at": "2026-04-13T18:46:32.317Z",
+      "updated_at": "2026-04-13T18:46:32.317Z"
+    },
+    {
+      "id": "task-1776160249830",
+      "title": "new testing 2",
+      "description": "testing 2",
+      "status": "in_progress",
+      "priority": "medium",
+      "project_id": "proj-1",
+      "assignee_id": "",
+      "due_date": "2026-04-16",
+      "created_at": "2026-04-14T09:50:49.830Z",
+      "updated_at": "2026-04-14T10:00:39.215Z"
+    }
+  ]
+}

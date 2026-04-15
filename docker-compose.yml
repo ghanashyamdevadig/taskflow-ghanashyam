@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: ./frontend
+      dockerfile: mock-api.Dockerfile
+    ports:
+      - "4001:4000"
+    environment:
+      - PORT=4000
+      - JWT_SECRET=${JWT_SECRET:-taskflow-secret-key-change-in-production}
+    volumes:
+      - ./frontend/mock-api/db.json:/app/db.json
+    networks:
+      - taskflow-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://api:4000
+    networks:
+      - taskflow-network
+
+networks:
+  taskflow-network:
+    driver: bridge

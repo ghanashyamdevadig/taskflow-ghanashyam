@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Build
+dist/
+build/
+*.egg
+*.egg-info/
+dist/
+.nexe/
+
+# Testing
+coverage/
+
+# Production
+*.log
+
+# Misc
+.DS_Store
+*.pem
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+.settings/
+.project
+.classpath
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Database (mock - local dev data)
+# Note: db.json in mock-api/ is committed as seed data
+# but can be ignored if you want fresh data on each checkout
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Vite
+.tsbuildinfo
